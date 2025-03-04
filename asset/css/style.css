@@ -153,7 +153,7 @@ body {
 
 /* ========== RESPONSIVE DESIGN ========== */
 
-@media (min-width: 300px) {
+@media (max-width: 768px) {
     /* Điều chỉnh header trên mobile */
     .custom-header {
         position: fixed;
@@ -204,9 +204,12 @@ body {
     .mobile-nav-toggle {
         display: none !important;
     }
-
+    .custom-header{
+        width: 100%;
+    }
     /* Giữ menu luôn hiển thị như trên máy tính */
     .custom-navmenu {
+        width: 100%;
         display: flex !important;
         position: static !important; /* Không cần absolute hay fixed */
         background: none;
@@ -596,7 +599,9 @@ body {
         flex-direction: column;
         text-align: center;
     }
-
+    .section-header {
+        margin-left: 0;
+    }
     .about-img img {
         height: 300px;
     }
@@ -654,7 +659,10 @@ body {
     .section-header h2 {
         font-size: 24px;
     }
-
+    .about-details{
+        margin-left: 5px;
+        width: 100%;
+    }
     .about-details h2 {
         font-size: 22px;
     }
@@ -666,9 +674,10 @@ body {
     .info-grid {
         gap: 5px;
     }
-
+    .about-details{
+        margin-left: -30px;
+    }
     .info-item {
-        padding: 8px;
         font-size: 14px;
     }
 }
